@@ -132,7 +132,7 @@ footer.navbar {
     width: 100%;
 }
 .wrapper-section>section:first-child{
-    min-height: calc(100vh - 235px);
+    min-height: calc(100vh - 323px);
 }
 /*功能性按鈕*/
 .btn-default {
@@ -648,6 +648,12 @@ a.color-2:active {
     .main-menu>li {
         margin-right: 0;
     }
+    .wrapper-section>section:first-child{
+        min-height: calc(100vh - 235px);
+    }
+    #topSettings {
+    padding: 12px 20px;
+}
 
 }
 
@@ -670,6 +676,7 @@ a.color-2:active {
         left: calc((100% - 750px)/2 - 196px);
         top: 12px;
     }
+    
 
 }
 
@@ -739,7 +746,7 @@ a.color-2:active {
 }
 /*表格偶數行，只要是tr(不管內部包含th/td)的偶數都會加底色*/
 .rwd-divtable .tr:nth-of-type(even) {
-    background: #F5F6F7;
+    background: #eeeeee;/*F5F6F7*/
 }
 
 
