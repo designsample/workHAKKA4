@@ -21,11 +21,11 @@
 #indexSearch>a {
     margin-left: 16px;
     border-radius: 8px;
-    height: 66px;
-    width: 66px;
+    height: 48px;
+    width: 48px;
     padding: 0;
     border: 2px;
-    line-height: 66px;
+    line-height: 48px;
     padding: 0;
     vertical-align: middle;
 }
@@ -160,13 +160,13 @@ a.searchImgOpen::before {
 
     #indexSearch input {
         width: calc(100% - 84px);
-        height: 66px;
+        height: 48px;
         font-size: 24px;
         background: #eeeeee;
         color: #908d8d;
         border-radius: 8px;
         border: 2px solid #f39700;
-        line-height: 66px;
+        line-height: 48px;
         padding: 0;
         vertical-align: middle;
         padding-left: 16px;
