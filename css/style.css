@@ -1,0 +1,830 @@
+@charset "UTF-8";
+
+/*For All*/
+*,
+label {
+    font-size: 18px;
+    font-family: "WenQuanYi Zen Hei", "文泉驛正黑", "Heiti TC", "黑體-繁", "LiHei Pro", "儷黑 Pro", "PingFang TC", "Droid Sans", "Roboto", "Microsoft JhengHei", "微軟正黑體";
+}
+
+a {
+    color: #f39700;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #d96200;
+}
+
+/*[設定]整體----------*/
+
+
+/*導覽列*/
+.navbar-brand {
+    margin-left: 0;
+    padding: 4px 0 0 0;
+}
+
+.wrapper-menu {
+    top: 126px;
+    position: relative;
+}
+
+.main-menu {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+
+}
+
+.main-menu>li {
+    margin-right: 2px;
+}
+
+.main-menu>li:last-child {
+    margin-right: 0;
+}
+
+.main-menu>li>a {
+    padding-top: 13px;
+    padding-bottom: 14px;
+    font-size: 24px;
+    background: #f39700;
+    color: #fff;
+}
+
+.main-menu>li>a:hover,
+.main-menu>li>a:focus,
+.main-menu>li>a:active {
+    padding-top: 13px;
+    padding-bottom: 14px;
+    font-size: 24px;
+    background: #f39700;
+    color: #362e2b;
+}
+
+.main-menu>li>a::after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6.5px 6px 6.5px;
+    border-color: transparent transparent #362e2b transparent;
+    content: '';
+    position: absolute;
+    right: 2.3em;
+    bottom: 0;
+}
+
+.sub-menu {
+    right: 0;
+    top: -55px;
+    position: absolute;
+}
+
+.btn-menu {
+    background: url(../img/btn-menu.png) no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.btn-menu:hover,
+.btn-menu:focus,
+.btn-menu:active {
+    background: url(../img/btn-menu-h.png) no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 32px;
+    padding: 0;
+}
+
+footer.navbar {
+    border-radius: 0;
+    padding: 20px 0;
+    background: #362e2b;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/*導覽列以外*/
+.breadcrumb {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ic-breadCrumb {
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+.wrapper-section {
+    background: url(../img/bg1.jpg) repeat-x bottom;
+    width: 100%;
+}
+
+/*功能性按鈕*/
+.btn-default {
+    color: #fff;
+    background-color: #f39700;
+    border-color: #f39700;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    color: #fff;
+    background-color: #d96200;
+    border-color: #d96200;
+
+}
+
+.btn-default:active:hover {
+    color: #362e2b;
+    background-color: #cc5c00;
+    border-color: #cc5c00;
+}
+
+#goTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    font-size: 14px;
+    vertical-align: middle;
+    z-index: 98;
+    text-align: center;
+}
+a.btn-fontSize{
+    border:1px solid #fcd68c;
+    font-size: 15px;
+    padding: 2px;
+    line-height: 15px;
+    color: #362e2b;
+}
+.btn-fontSize.active{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:1px solid #fcd68c;
+    background: #fcd68c;
+}
+/*[設定]元件----------*/
+#topSettings{
+    padding: 12px 0;
+}
+#topSettings input.inputText{
+    border: 1px solid #f39700;
+    width: 226px;
+}
+#topSettings a.btn-default{
+    padding: 4px 6px 1px 6px;
+}
+
+/* The container */
+.customCheckBox {
+    display: inline-block;
+    position: relative;
+    padding: 0 30px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #362e2b;
+}
+.customCheckBox.CheckBoxSmall{
+    padding: 0 0 0 22px;
+    font-size: 15px;
+}
+/* Hide the browser's default radio button */
+.customCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f39700;
+    background-color: #eee;
+    border-radius: 6px;
+}
+.checkmark.checkmarkSmall{
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #f39700;
+    border-radius: 2px;
+}
+/* On mouse-over, add a grey background color */
+.customCheckBox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.customCheckBox input:checked~.checkmark {
+    background-color: #f39700;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.customCheckBox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.customCheckBox .checkmark:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    background: #f39700;
+}
+.customCheckBox.CheckBoxSmall .checkmark.checkmarkSmall:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    background: #f39700;
+}
+
+
+/*img圖片照片樣式*/
+
+.img-round {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.progress .progress-bar {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.progress {
+    height: 20px;
+
+}
+
+.card {
+
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+}
+
+.card-header {
+
+    border-radius: calc(5px - 1px) calc(5px - 1px) 0 0;
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+/*[設定]層級----------*/
+
+
+/*文字h1-h6*/
+
+
+/*LOGO標題*/
+
+.h1 {
+    font-size: px;
+}
+
+
+/*大標題*/
+
+.h2 {
+    font-size: 24px !important;
+    margin: 0;
+}
+
+
+/*中標題*/
+
+.h3 {
+    font-size: 22px !important;
+    margin: 0;
+}
+
+
+
+/*小標題 內文前標題*/
+
+.h4 {
+    font-size: 20px !important;
+    margin: 0;
+}
+
+
+
+/*內文中標題*/
+
+.h5 {
+    font-weight: bold;
+    font-size: 18px !important;
+    margin: 0;
+}
+
+/*狀態類文字*/
+
+.h6 {
+    font-size: 13px !important;
+    margin: 0;
+}
+
+.bg-header {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.bg-light {
+    background: #ecf0f1 !important;
+}
+
+.color-light {
+    color: #ecf0f1;
+}
+
+.color-deep {
+    color: #2C3E50;
+}
+
+.badge-light {
+    color: #212529;
+    background-color: #ecf0f1;
+}
+.color-2{
+    color:#d04a2a;
+}
+
+a.color-1 {
+    color: #fff;
+}
+
+a.color-1:focus,
+a.color-1:hover,
+a.color-1:active {
+    color: #aaa;
+}
+
+a.color-2 {
+    color: #362e2b;
+}
+
+a.color-2:focus,
+a.color-2:hover,
+a.color-2:active {
+    color: #000;
+}
+
+/*[設定]功能----------*/
+
+.inline-block {
+    display: inline-block;
+}
+
+
+
+/*[設定]間距*/
+
+.b-0 {
+    border: 0px;
+    border-color: transparent;
+}
+
+.bs-0 {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.p-hr {
+    padding: 1em 0;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.pv-6 {
+    padding: 6px 0;
+}
+
+.pv-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pv-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ph-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.ph-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ph-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.f-0 {
+    float: none !important;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-10 {
+    margin: 10px !important;
+}
+
+.mv-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mv-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mv-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mh-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.mh-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bb {
+    border-bottom: 1px solid #94a5a6;
+}
+
+.bt {
+    border-top: 1px solid #94a5a6;
+}
+
+.text-decoration-0 {
+    text-decoration: none;
+}
+
+
+.width-full {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    nav.navbar {
+        background: url(../img/bg-mobileNav.png) repeat-x;
+        height: 93px;
+    }
+
+    .navbar-brand {
+        margin-left: 100px;
+        padding: 6px 0 0 0;
+    }
+
+    .logo>a>#logoImg {
+        width: 175px;
+        height: auto;
+    }
+
+    .flower {
+        position: absolute;
+        left: 9px;
+        top: 8px;
+        width: 106px;
+        height: auto;
+    }
+    .main-menu>li>a::after{
+        display: none;
+    }
+
+    .btn-menu {
+        background: url(../img/btn-menu.png) no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 26px;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        top: 56px;
+    }
+
+    .btn-menu:hover,
+    .btn-menu:focus,
+    .btn-menu:active {
+        background: url(../img/btn-menu-h.png) no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 26px;
+        padding: 0;
+        top: 56px;
+    }
+
+    .wrapper-menu,
+    .container>div.navbar-collapse {
+        top: 42px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-menu {
+        left: 0;
+        top: 0;
+        bottom: 0;
+        position: relative;
+    }
+
+    .main-menu>li {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    nav.navbar {
+        height: 173px;
+        margin-bottom: 40px;
+        z-index: 4;
+        background: url(../img/bg-mainMenu.png), url(../img/bg-subMenu.png);
+        background-position: bottom, left top;
+        /*calc( (100% - 1150px)/2 + 1292px) 8px*/
+        background-repeat: repeat-x, repeat-x;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .flower {
+        position: absolute;
+        left: calc((100% - 750px)/2 - 196px);
+        top: 12px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .flower {
+        position: absolute;
+        left: calc((100% - 970px)/2 - 196px);
+        top: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar>.container .navbar-brand {
+        margin-left: 175px;
+        padding: 4px 0 0 0;
+    }
+
+    .flower {
+        position: absolute;
+        left: calc((100% - 1100px)/2 - 37px);
+        top: 12px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {}
+
+
+
+/*表格*/
+
+.table {
+    background: #fff;
+    overflow: hidden;
+    color: #4a4a4a;
+}
+
+.table tr:nth-of-type(even) {
+    background: #F5F6F7;
+}
+
+.table th,
+.table td {
+    margin: 15px 5px;
+}
+
+
+
+
+
+/*RWD表格*/
+
+.rwd-divtable>.tr:first-child{
+    background: #fcd68c;
+}
+/*RWD DIV表格*/
+/*RWD DIVtable*/
+.rwd-divtable {
+    min-width: 100%;
+    background: #fff;
+    overflow: hidden;
+    color: #4a4a4a;
+}
+/*th字體加粗*/
+.rwd-divtable .tr:first-child>.th {
+    font-weight: bold;
+}
+/*表格偶數行，只要是tr(不管內部包含th/td)的偶數都會加底色*/
+.rwd-divtable .tr:nth-of-type(even) {
+    background: #F5F6F7;
+}
+
+
+.rwd-divtable {
+    display: table;
+}
+
+.rwd-divtable .thead {
+    display: table-header-group;
+}
+
+.rwd-divtable .tbody {
+    display: table-row-group;
+}
+
+.rwd-divtable .tfooter {
+    display: table-footer-group;
+}
+
+.rwd-divtable .tr {
+    display: table-row;
+}
+
+.rwd-divtable .th,
+.rwd-divtable .td {
+    display: table-cell;
+    text-align: left;
+    padding: 15px 5px;
+}
+/*表格標題，只能在table標籤下有一個，建議用title取代*/
+.rwd-divtable .caption{
+    display: table-caption;
+    text-align: center;
+}
+.rwd-divtable .col{
+    display: table-column;
+}
+/*選取幾欄*/
+.rwd-divtable .colgroup{
+    display: table-column-group;
+}
+/*會先吃到這個設定讓表頭消失，但尺寸992px以下會再吃到display:block屬性*/
+.rwd-divtable .th {
+    display: none;
+}
+
+.rwd-divtable .td {
+    display: block;
+}
+
+.rwd-divtable .td:before {
+    content: attr(data-th) " : ";
+    font-weight: bold;
+    width: 7em;
+    display: inline-block;
+}
+.rwd-divtable .th,
+.rwd-divtable .td:before {
+    color: #4A4A4A;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .rwd-divtable .td:before {
+        display: none;
+    }
+    .rwd-divtable .th,
+    .rwd-divtable .td {
+        display: table-cell;
+        padding: 15px 5px;
+    }
+    .rwd-divtable .th:first-child,
+    .rwd-divtable .td:first-child {
+        padding-left: 10px;
+    }
+    .rwd-divtable .th:last-child,
+    .rwd-divtable .td:last-child {
+        padding-right: 10px;
+    }
+    .rwd-divtable .th,
+    .rwd-divtable .td {
+        padding: 15px 5px;
+        !important;
+    }
+    .rwd-divtable .th,
+    .rwd-divtable .td:before {
+        color: #4a4a4a;
+        font-weight: normal;
+    }
+}
+
+.rwd-divtable tr>th>a.glyphicon {
+    text-decoration: none;
+}
