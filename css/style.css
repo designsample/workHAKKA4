@@ -94,7 +94,9 @@ a:focus {
     border: 0;
     border-radius: 0;
 }
-
+.navbar-collapse{
+    z-index: 99;
+}
 .btn-menu:hover,
 .btn-menu:focus,
 .btn-menu:active {
