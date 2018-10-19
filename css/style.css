@@ -733,7 +733,7 @@ a.color-2:active {
 
 /*RWD表格*/
 
-.rwd-divtable>.tr:first-child>.td{
+.rwd-divtable>.tr.header{
     background: #fcd68c;
 }
 /*RWD DIV表格*/
