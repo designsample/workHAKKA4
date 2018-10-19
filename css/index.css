@@ -18,18 +18,6 @@
 
 }
 
-#indexSearch>a {
-    margin-left: 16px;
-    border-radius: 8px;
-    height: 48px;
-    width: 48px;
-    padding: 0;
-    border: 2px;
-    line-height: 48px;
-    padding: 0;
-    vertical-align: middle;
-}
-
 #indexSearch>a>span {
     font-size: 36px;
     vertical-align: middle;
@@ -180,6 +168,17 @@ a.searchImgOpen::before {
         width: 90%;
         margin-right: 10%;
     }
+    #indexSearch>a {
+    margin-left: 16px;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    border: 2px;
+    line-height: 48px;
+    padding: 0;
+    vertical-align: middle;
+}
 }
 
 @media screen and (min-width: 767px) {
@@ -190,6 +189,17 @@ a.searchImgOpen::before {
     #searchOptions {
         padding: 0 0 0 122px;
     }
+    #indexSearch>a {
+    margin-left: 16px;
+    border-radius: 8px;
+    height: 66px;
+    width: 66px;
+    padding: 0;
+    border: 2px;
+    line-height: 66px;
+    padding: 0;
+    vertical-align: middle;
+}
 }
 
 @media screen and (min-width: 992px) {

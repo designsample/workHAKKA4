@@ -155,7 +155,11 @@ footer.navbar {
     background-color: #cc5c00;
     border-color: #cc5c00;
 }
-
+.btn-sup{
+    color: #d04a2a;
+    font-size: 20px;
+    padding: 0;
+}
 #goTop {
     display: none;
     position: fixed;
@@ -816,7 +820,7 @@ a.color-2:active {
     .rwd-divtable .th,
     .rwd-divtable .td {
         display: table-cell;
-        padding: 15px 5px;
+        padding: 10px 5px;
     }
     .rwd-divtable .th:first-child,
     .rwd-divtable .td:first-child {
@@ -828,8 +832,7 @@ a.color-2:active {
     }
     .rwd-divtable .th,
     .rwd-divtable .td {
-        padding: 15px 5px;
-        !important;
+        padding: 10px 5px !important;
     }
     .rwd-divtable .th,
     .rwd-divtable .td:before {
