@@ -184,6 +184,22 @@ a.btn-fontSize{
     background: #fcd68c;
 }
 /*[設定]元件----------*/
+table.details{
+    width: 100%;
+    padding: 10px 5px;
+    background: #eee;
+}
+
+table.details tr>th, table.details tr>td{
+    padding: 10px 5px;
+    border-bottom: 1px solid #fcd68c;
+    border-left: 1px solid #fcd68c;
+}
+table.details tr>th:first-child, table.details tr>td:first-child{
+    width: 6em;
+    border-left: none;
+}
+
 #topSettings{
     padding: 12px 0;
 }
@@ -388,7 +404,9 @@ a.btn-fontSize{
 .bg-light {
     background: #ecf0f1 !important;
 }
-
+.bg-1{
+    background: #fcd68c;
+}
 .color-light {
     color: #ecf0f1;
 }
@@ -729,11 +747,55 @@ a.color-2:active {
 
 
 
+/*div table*/
+/*預設寬100%*/
+.divtable {
+    display: table;
+    width: 100%;
+}
+
+.divtable .thead {
+    display: table-header-group;
+}
+
+.divtable .tbody {
+    display: table-row-group;
+}
+
+.divtable .tfooter {
+    display: table-footer-group;
+}
+
+.divtable .tr {
+    display: table-row;
+}
+/*預設邊距*/
+.divtable .th,
+.divtable .td {
+    display: table-cell;
+    padding: 10px 5px;
+}
+/*表格標題，只能在table標籤下有一個，建議用title取代*/
+.divtable .caption{
+    display: table-caption;
+    text-align: center;
+}
+.divtable .col{
+    display: table-column;
+}
+/*選取幾欄*/
+.divtable .colgroup{
+    display: table-column-group;
+}
+.divtable .tr{
+    border-bottom: 1px solid #fcd68c;
+}
+
 
 
 /*RWD表格*/
 
-.rwd-divtable>.tr.header{
+.rwd-divtable>.tr.header, .rwd-divtable>.tr.footer{
     background: #fcd68c;
 }
 /*RWD DIV表格*/
