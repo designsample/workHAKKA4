@@ -47,10 +47,11 @@
 }
 
 a.searchImg::before {
-    line-height: 20px;
+    line-height: 22px;
     font-size: 18px;
     height: 20px;
     width: 20px;
+    top: 0;
     border: 1px solid #f39700;
     border-radius: 6px;
     color: #f39700;
@@ -64,11 +65,12 @@ a.searchImg::before {
 }
 
 a.searchImgOpen::before {
-    line-height: 20px;
+    line-height: 22px;
     font-size: 18px;
     height: 20px;
     width: 20px;
     border: 1px solid #f39700;
+    top: 0;
     border-radius: 6px;
     color: #f39700;
     content: "";
