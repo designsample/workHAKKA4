@@ -54,7 +54,10 @@ a.searchImg::before {
     border: 1px solid #f39700;
     border-radius: 6px;
     color: #f39700;
-    content: "╋";
+    content: "";
+    background: url(../img/ic-crossOpen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
     vertical-align: text-top;
     margin-right: 10px;
@@ -68,7 +71,10 @@ a.searchImgOpen::before {
     border: 1px solid #f39700;
     border-radius: 6px;
     color: #f39700;
-    content: "━";
+    content: "";
+    background: url(../img/ic-minusClose.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
     vertical-align: text-top;
     margin-right: 10px;
