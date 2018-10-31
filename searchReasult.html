@@ -70,7 +70,7 @@
                     </ol>
                 </div>
                 <!-- / 麵包屑 -->
-                <div class="col-xs-12 col-sm-6 text-right" id="topSettings">
+                <div class="col-xs-12 col-sm-6 text-right hidden-xs" id="topSettings">
                     <div class="col-xs-12 p-0">
                         <p class="inline-block">字級設定：</p>
                         <div class="inline-block" id="searchB">
@@ -110,7 +110,7 @@
                     <h4>》本次查詢共找到<p class="color-2 inline-block">1</p>筆，總共<p class="color-2 inline-block">1</p>頁</h4>
                 </div>
                 <div class="col-xs-12">
-                    <div class="rwd-divtable">
+                    <div class="rwd-divtable searchReasult">
                         <div class="tr header">
                             <div class="th">編號</div>
                             <div class="th">詞目</div>
@@ -119,6 +119,7 @@
                             <div class="td" aria-label="編號" data-th="編號">1.</div>
                             <div class="td" aria-label="詞目" data-th="詞目">【<a data-toggle="popover" class="btn-group btn btn-sup" data-trigger="hover" data-container="body" data-placement="bottom" type="button" role="button" data-html="true" href="details.html" id="word1">阿婆</a>】</div>
                         </div>
+
                     </div>
                     <div id="popover-content-word1" class="hide">
                         <div class="divtable">
@@ -165,35 +166,63 @@
                         <!-- / RWD div表格 -->
                     </div>
                     <!-- / 資料內容 -->
-                    <div class="col-xs-12 bg-1 pv-10 mb-40">
-                            <select name="" id="sortBy" class="from-control">
-                                <option value="0" selected="selected">請選擇排序欄位</option>
-                                <option value="1">編號升冪排列</option>
-                                <option value="2">編號降冪排列</option>
-                            </select>
-                        <div class="btn-group btn-group-xs" role="group" aria-label="First group">
-                            <button type="button" class="btn btn-default">&#xFFDC;&#10094;</button>
-                            <button type="button" class="btn btn-default">&#10094;</button>
-                            <button type="button" class="btn btn-default active">1</button>
-                            <button type="button" class="btn btn-default">2</button>
-                            <button type="button" class="btn btn-default">3</button>
-                            <button type="button" class="btn btn-default">4</button>
-                            <button type="button" class="btn btn-default">&#10095;</button>
-                            <button type="button" class="btn btn-default">&#10095;&#xFFDC;</button>
+                    <div class="searchOptions col-xs-12 bg-1 pv-10 mb-40 hidden-xs">
+                        <div class="inline-block m-0">
+                            <form class="form-pageControl" id="form1"  name="form1">
+                                <input class="imgBtn" type="button"  name="gotoFirstP_btn"  id="gotoFirstP_btn">
+                                <input class="imgBtn" type="button"  name="gotoPreP_btn"  id="gotoPreP_btn">
+                                <input type="text" id="gotoWhatP" name="" class="" placeholder="1" style="width:4em;line-height: 1;height: 100%">
+                                <input class="imgBtn" type="button"  name="gotoNextP_btn"  id="gotoNextP_btn">
+                                <input class="imgBtn" type="button"  name="gotoLasttP_btn"  id="gotoLasttP_btn">
+                            </form>
+                            &emsp;
                         </div>
-                        <p class="inline-block m-0">跳至頁數：</p>
+                        <p class="inline-block m-0">跳至：</p>
                         <input type="text" id="keyWords" name="" class="from-control" placeholder="1" style="width:4em;line-height: 1">
                         <p class="inline-block m-0">/1 頁</p>
                         <a href="" class="btn btn-xs btn-default mr-10" role="button">跳頁</a> &nbsp;
-                        <p class="inline-block m-0">每頁顯示：</p>
+                        <p class="inline-block m-0">每頁筆數：</p>
                         <select id="itemperPage" title="itemperPage" class="from-control">
                             <option value="10" selected="selected">10</option>
                             <option value="30">30</option>
                             <option value="50">50</option>
                             <option value="100">100</option>
                         </select>
-                        <p class="inline-block m-0">筆</p>
+                        
+                        <a class="pull-right color-2" onclick="topFunction()"><img src="img/ic-gototop.png">回首頁(TOP)</a>
                     </div>
+                    <!-- / 大尺寸 -->
+                    <div class="col-xs-12 pv-10 visible-xs">
+                        <div class="inline-block m-0">
+                            <form class="form-pageControl" id="form1"  name="form1">
+                                <input class="imgBtn" type="button"  name="gotoFirstP_btn"  id="gotoFirstP_btn">
+                                <input class="imgBtn" type="button"  name="gotoPreP_btn"  id="gotoPreP_btn">
+                                <input type="text" id="gotoWhatP" name="" class="" placeholder="1" style="width:4em;line-height: 1;height: 100%">
+                                <input class="imgBtn" type="button"  name="gotoNextP_btn"  id="gotoNextP_btn">
+                                <input class="imgBtn" type="button"  name="gotoLasttP_btn"  id="gotoLasttP_btn">
+                            </form>
+                            &emsp;
+                        </div>
+                        <a class="pull-right color-2" onclick="topFunction()"><img src="img/ic-gototop.png">回首頁(TOP)</a>
+                    </div>
+                    <div class="searchOptions col-xs-12 bg-1 pv-10 mb-40 visible-xs">
+                        
+                        <p class="inline-block m-0">跳至：</p>
+                        <input type="text" id="keyWords" name="" class="from-control" placeholder="1" style="width:4em;line-height: 1">
+                        <p class="inline-block m-0">/1 頁</p>
+                        <a href="" class="btn btn-xs btn-default mr-10" role="button">跳頁</a> &nbsp;
+                        <span class="pull-right"><p class="inline-block m-0">每頁筆數：</p>
+                        <select id="itemperPage" title="itemperPage" class="from-control">
+                            <option value="10" selected="selected">10</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </span>
+                        
+                        
+                    </div>
+                    <!-- / 小尺寸 -->
                 </div>
             </div>
         </section>
