@@ -134,6 +134,77 @@ footer.navbar {
 .wrapper-section>section:first-child{
     min-height: calc(100vh - 323px);
 }
+
+.rwd-divtable.searchReasult .tr .th:first-child{
+    width: 4em;
+}
+.searchOptions input[type = "text"]{
+    border: 1px solid #f39700;
+    color: #d04a2a;
+}
+.form-pageControl{
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-pageControl input.imgBtn{
+    background-color: transparent;
+    border:none;
+    height: 19px;
+    width: 19px;
+    vertical-align: middle;
+}
+.form-pageControl input.imgBtn:nth-child(1){
+    background: url(../img/btn-first.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.form-pageControl input.imgBtn:nth-child(1):hover, .form-pageControl input.imgBtn:nth-child(1):focus, .form-pageControl input.imgBtn:nth-child(1):active{
+    background: url(../img/btn-first-h.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.form-pageControl input.imgBtn:nth-child(2){
+    background: url(../img/btn-pre.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.form-pageControl input.imgBtn:nth-child(2):hover, .form-pageControl input.imgBtn:nth-child(2):focus, .form-pageControl input.imgBtn:nth-child(2):active{
+    background: url(../img/btn-pre-h.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.form-pageControl input.imgBtn:nth-child(4){
+    background: url(../img/btn-next.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.form-pageControl input.imgBtn:nth-child(4):hover, .form-pageControl input.imgBtn:nth-child(4):focus, .form-pageControl input.imgBtn:nth-child(4):active{
+    background: url(../img/btn-next-h.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.form-pageControl input.imgBtn:nth-child(5){
+    background: url(../img/btn-last.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.form-pageControl input.imgBtn:nth-child(5):hover, .form-pageControl input.imgBtn:nth-child(5):focus, .form-pageControl input.imgBtn:nth-child(5):active{
+    background: url(../img/btn-last-h.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 /*功能性按鈕*/
 .btn-default {
     color: #fff;
@@ -169,6 +240,10 @@ footer.navbar {
     vertical-align: middle;
     z-index: 98;
     text-align: center;
+    background: #362e2bcc;
+    border:1px solid #362e2b;
+    border-radius: 6px;
+    padding:5px 10px;
 }
 a.btn-fontSize{
     border:1px solid #fcd68c;
@@ -435,6 +510,7 @@ a.color-1:active {
 
 a.color-2 {
     color: #362e2b;
+    cursor: pointer;
 }
 
 a.color-2:focus,
@@ -675,7 +751,8 @@ a.color-2:active {
     }
     #topSettings {
     padding: 12px 20px;
-}
+    }
+
 
 }
 
@@ -697,6 +774,12 @@ a.color-2:active {
         position: absolute;
         left: calc((100% - 750px)/2 - 196px);
         top: 12px;
+    }
+    .rwd-divtable.searchReasult div.tr:first-child .th{
+        margin-bottom: 1px;
+    }
+    .rwd-divtable.searchReasult div.tr:first-child .th:first-child{
+        border-right: 1px solid #fff;
     }
     
 
@@ -894,7 +977,7 @@ a.color-2:active {
     }
     .rwd-divtable .th,
     .rwd-divtable .td {
-        padding: 10px 5px !important;
+        padding: 10px 10px !important;
     }
     .rwd-divtable .th,
     .rwd-divtable .td:before {
